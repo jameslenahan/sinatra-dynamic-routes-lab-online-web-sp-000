@@ -1,8 +1,7 @@
 require_relative 'config/environment'
 
 class App < Sinatra::Base
-end 	
-  get '/reversename/:name' do
+ get '/reversename/:name' do
     @reverse_name = params[:name].reverse
     @reverse_name
   end
@@ -44,6 +43,4 @@ end
         (@num1 / @num2).to_s
     end
   end
-end
-
 end
